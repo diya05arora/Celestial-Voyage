@@ -72,8 +72,36 @@ nav ul {
     color: var(--in-active);
 }
 
-.heading{
-    z-index: 100;
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 100%; /* Ensures the image scales properly */
+    display: block;
+}
+
+.heading, .heading2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white; /* Adjust color for visibility */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.heading {
+    top: 50%; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.heading2 {
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #d4ba5e;
 }
 
 .section_1 {
@@ -103,8 +131,56 @@ nav ul {
     opacity: 0;
     align-self: center;
     font-size: 50px;
-    color: var(--dark-blue);
+    color: #d4ba5e;
 }
+
+/* Basic styling for the sections */
+.travel-option {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #01163f;
+    background-image: url(img/background.png);
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add the visible class to animate sections into view */
+.travel-option.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* For the section headers (h2) */
+.travel-option h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #d4ba5e;
+}
+
+/* For the paragraphs */
+.travel-option p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Style for smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Optionally add a smooth hover effect for better interactivity */
+.travel-option:hover {
+    background-color: #7e7c7c;
+    cursor: pointer;
+}
+
 
 .section_3{
     margin-top: 50vh;

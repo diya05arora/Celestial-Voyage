@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 3.5s ease-in-out;
+}
+
+body {
+    background-color: #060407;
+    font-family: var(--font);
+    overflow-x: hidden;
+}
+
+:root {
+    --grey: #eeeeee;
+    --button-identity: #64d0dc;
+    --text: #67abab;
+    --safe: #94dc64;
+    --fast: #dc7064;
+    --dark-brown: #352b26;
+    --dark-blue: #132a3b;
+    --grey: #707070;
+    --in-active: #707070;
+    --font: calibri;
+}
+
+.container {
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50vh;
+}
+
+nav {
+    margin: 15px auto;
+    position: fixed;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+nav img {
+    width: 83px;
+    height: 107px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 15.5px;
+}
+
+.nav-button {
+    color: #fff;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    color: var(--button-identity);
+}
+
+.bf {
+    color: var(--in-active);
+    cursor: auto;
+}
+
+.bf:hover {
+    color: var(--in-active);
+}
+
+.container_2 {
+    margin-top: 20vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+}
+
+.earth, .moon, .solar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25vh;
+    width: 100%;
+    cursor: pointer;   
+}
+
+img {
+    position: relative;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.p1, .p2, .p3 {
+    position: absolute;
+    width: 83%;
+    transform: translateX(14%);
+}
+
+.p2 {
+    width: 50%;
+    transform: translateX(50%);
+}
+
+.img_solar {
+    transform: rotate(90deg);
+    border-radius: 35px;
+}
+
+.p3 {
+    width: 35%;
+    transform: translateX(90%);
+}
+
+
+.earth_enlarge {
+    transform: translateX(100%) scale(2.5, 2.5);
+}
+
+.enlarge{
+    transform: scale(4,4);
+}
+
+.solar_enlarge {
+    transform: translateX(-100%) scale(1.5, 1.5) rotate(90deg);
+}
+
+.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.center{
+    transform: translateX(150%);
+}
+
+.p3_center {
+    transform: translateX(-200%);
+}
+
+.around_earth{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+}
+
+.earth_text {
+    position: relative;
+    width: 25%;
+    margin-left: 5%;
+    transform: translateY(25vh);
+    color: #eee;
+    font-size: 45px;
+    text-align: center;
+}
+
+button {
+    margin: 100vh 40%;
+    width: 250px;
+    height: 75px;
+    border-radius: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: var(--button-identity);
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    color: var(--grey);
+    border: 1px solid var(--grey);
+}
+
+.hide{
+    display: none;
+}
+
+.scroll{
+    transform: translateY(300px);
+}
