@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 * {
     margin: 0;
     box-sizing: border-box;
@@ -5,7 +6,7 @@
 
 body {
     background-color: #060407;
-    font-family: var(--font);
+    font-family: "Playfair Display";
     overflow-x: hidden;
 }
 
@@ -338,7 +339,24 @@ button:hover {
     margin: auto;
     font-size: 2rem;
   }
+  @media (max-width: 800px) {
+    .section_7{
+        display: none;
+    }
+  }
   
+  @media (max-width: 800px) {
+    .carousel__face {
+      width: 200px; /* Adjust width */
+      height: 125px; /* Adjust height */
+      top: 10px; /* Adjust position if necessary */
+      left: 5px; /* Adjust position if necessary */
+    }
+  
+    span {
+      font-size: 1.5rem; /* Smaller text for smaller screens */
+    }
+  }
   
   .carousel__face:nth-child(1) {
     background-image: url("img/raw/galaxy-3608029.jpg");
