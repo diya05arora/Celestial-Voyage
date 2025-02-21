@@ -396,3 +396,9 @@ button:hover {
       transform: rotateY(-360deg);
     }
   }
+
+  footer {
+    background-color: #f6bd60;
+    padding: 10px;
+    text-align: center;
+  }
