@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #060407;
+    font-family: var(--font);
+    overflow-x: hidden;
+}
+
+:root {
+    --grey: #eeeeee;
+    --button-identity: #64d0dc;
+    --text: #67abab;
+    --safe: #94dc64;
+    --fast: #dc7064;
+    --dark-brown: #352b26;
+    --dark-blue: #132a3b;
+    --grey: #707070;
+    --in-active:#707070;
+    --font: calibri;
+}
+
+.container {
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50vh;
+}
+
+
+nav {
+    margin: 15px auto;
+    position: fixed;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+nav img {
+    width: 83px;
+    height: 107px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 15.5px;
+}
+
+.nav-button {
+    color: #fff;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    color: var(--button-identity);
+}
+
+.hp {
+    color: var(--in-active);
+    cursor: auto;
+}
+
+.hp:hover {
+    color: var(--in-active);
+}
+
+.heading{
+    z-index: 100;
+}
+
+.section_1 {
+    width: 100%;
+    height: 100vh;
+}
+
+.section_2 {
+    height: 60vh;
+    width: 100%;
+    background-color: #060407;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.text_1 {
+    opacity: 0;
+    transform: translateX(-200px);
+    align-self: flex-start;
+    font-size: 75px;
+    color: var(--button-identity);
+}
+
+.text_2 {
+    opacity: 0;
+    align-self: center;
+    font-size: 50px;
+    color: var(--dark-blue);
+}
+
+.section_3{
+    margin-top: 50vh;
+    color: var(--button-identity);
+    font-size: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.item_1{
+    grid-column: 1/ span 3;
+}
+
+.item_3 {
+    grid-row: 2;
+    grid-column: 2 / span 3;
+}
+
+.item_4 {
+    grid-row: 2;
+    grid-column: 5;
+}
+
+.section_4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+.section_4 p {
+    color: var(--grey);
+    width: 25%;
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+.section_4 img {
+    width: 550px;
+    height: 500px;
+}
+
+.container_2{
+    background-image: url(images/raw/father-day-4853174.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.container .section_5 {
+    opacity: 0;
+    font-family: Freestyle Script;
+    font-size: 75px;
+    font-weight: 300;
+    margin-left: 5%;
+    padding-top: 25vh;
+    color: var(--button-identity);
+}
+
+.container .section_6 {
+    opacity: 0;
+    font-family: Freestyle Script;
+    font-size: 75px;
+    font-weight: 300;
+    margin-left: 45%;
+    color: var(--button-identity);
+}
+
+.section_7{  
+    height: 80vh;
+    width: 30%;
+    border-radius: 30px;
+}
+
+.section_8{
+    z-index: -2;
+    color: var(--fast);
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 1.5fr;
+}
+
+.section_9{
+    height: 80vh;
+    width: 30%;
+    border-radius: 30px;
+    align-self: flex-start;
+    margin-left: 10%;
+    opacity: 0;
+}
+
+
+.section_change {
+    height: 50vh;
+    width: 20%;
+    opacity: 0;
+}
+
+.h1{
+    text-align: center;
+    padding-top: 75vh;
+    font-size: 75px;
+    color: var(--button-identity);
+}
+
+button {
+    margin: 20vh 40%;
+    width: 250px;
+    height: 75px;
+    border-radius: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: var(--button-identity);
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+button:hover {
+    background: transparent;
+    color: var(--grey);
+    border: 1px solid var(--grey);
+}
